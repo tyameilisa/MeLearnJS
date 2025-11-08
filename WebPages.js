@@ -1,26 +1,21 @@
-<!DOCTYPE html> //what is all this??
-  //it tells the browser how to interpret the rest of the file
-  <html>
-
-  <!-- if I want to comment I shall use this -->
-  
+<!DOCTYPE html>
+<html>
   <body>
-  //the tag defines whats visible on the page (what user see)
-  <h1> HEWWOOO?? </h1>  
-  //header 1 is the biggest title text. apparenbtly i dont need quotes
-  <h2> i just write whatever, lol </h2> 
-  // header two is smaller. dont forget the slash at the second <>
-  
-    <p id="demo" ></p>  
-    
-  //bruh what was that?
-    let result = myFunction(4,3);
-    document.getElementByID("demo").innerHTML = "The product is:" +result;
+    <h2> I think i know how this works, lol</h2>
+      <p id= "demo"> </p> 
 
-</script> 
-  //what is this?
+      <script>
+        function myFunction(a,b){
+          return a*b;
+        }
+
+        let result = myFunction(450,62);
+        document.getElementByID("demo").innerHTML = "the product is:" + result;
+
+        "so coding is like putting things inside something that is inside of another thing"
+        "how am I making sense of this functions?"
+        "why not make 2 times 3 easy? why must the return and let result? so complicated"
+        "can't express my frustration with emoji either!"
+      </script>
   </body>
-  </html> 
-  // why the slash? this is the closing of that <html> and >body> above
-
-  
+</html>
