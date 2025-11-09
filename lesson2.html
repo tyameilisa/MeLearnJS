@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <h1 style="text-align: center;">
+            LESSON 2 : <br> Doing a more complicated math and fix my table
+        </h1>
+        <h2 style="text-align: center;">
+            Still not adding any color today (thumbs up)
+            <br> I think I need to learn to add emojis to better express myself
+        </h2>
+    <p id="runText"> </p>
+        <script>
+            function myFunction (a,b,d){
+                return a*b+d; 
+            }
+            let result = myFunction(7,14,21);
+            let result2 = myFunction(8,16,24);
+            document.getElementById("run1").innerHTML = "a times b plus d is " + result;
+            document.getElementById("run1").innerHTML += "<br>" + result2
+        </script>
+        <h2> okay, here's the BETTER table </h2>
+        <script>
+            document.write("<br>how much is a times b plus d?");
+        </script>
+        <table id="resultTable" border ="1">
+            <tr>
+                <th>Run Number</th>
+                <th>a</th>
+                <th>b</th>
+                <th>d</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>Run 1</td>
+                <td>7</td>
+                <td>14</td>
+                <td>21</td>
+                <td id="run1"></td>
+            </tr>
+            <tr>
+                <td>Run 2</td>
+                <td>8</td>
+                <td>16</td>
+                <td>24</td>
+                <td id="run2"></td>
+            </tr>
+        </table>
+
+        <script>
+            document.getElementById("run1").innerHTML = result;
+            document.getElementById("run2").innerHTML = result2;
+        </script>
+
+    </body>
+</html>
