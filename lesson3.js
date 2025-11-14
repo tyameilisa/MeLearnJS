@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <h1 style="text-align: center;"> 
+            My Calculator
+        </h1>"
+
+        <p>
+            a : <input id="inputA" type="text"><br>
+            b : <input id="inputB" type="text"><br>
+            d : <input id="inputD" type="text"><br><br>
+
+            <button onclick="calculate()">
+                calculate
+            </button>
+        </p>
+
+        <p>
+            Result: <span id="resultText"> </span>
+        </p>
+
+        <script>
+            function myFunction(a,b,d){
+                return a*b+d;
+            }
+
+            function calculate(){
+                let a = number(document.getElementById("inputA").value)
+                let b = number(document.getElementById("inputB").value)
+                let d = number(document.getElementById("inputD").value)
+
+                let result = myFunction(a,b,d);
+
+                document.getElementById("resultText").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>
+
